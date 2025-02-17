@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src", // 타겟이 되는 폴더 경로 
+        "outDir": "./build/js", // 타스가 컴파일되어 자스가 생성될 때, 자스가 저장되는 위치 
+        "target": "ES2015", // ES06,
+        "noEmitOnError": false
+    }, 
+
+    "include": [
+        "./src/**/*.ts", // 대상이 되는 타스 파일 패턴, 이외의 패턴은 제외함 
+    ]
+}

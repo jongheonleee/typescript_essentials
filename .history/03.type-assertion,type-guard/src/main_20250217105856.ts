@@ -1,0 +1,19 @@
+const bodyElement = document.querySelector('body');
+bodyElement!.innerText = 'Hello'; // ! 를 활용하면 컴파일러에게 null, undefined 가 아니라고 명시함 
+
+
+// type guard 사용 
+if (bodyElement) {
+    bodyElement.innerText = 'Hello';
+}
+
+function func(arg: string | null) {
+    if (arg) {
+        return (arg.toLowerCase());
+    }
+    return (arg as string).toLowerCase(); // 타입 단언 활용 
+}
+
+
+func('hello');
+func(null); 
