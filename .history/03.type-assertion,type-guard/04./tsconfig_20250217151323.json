@@ -1,0 +1,19 @@
+// 컴파일러 옵션 설정 
+{
+    "compilerOptions": {
+        "rootDir": "../../04./src", // 타겟이 되는 폴더 경로 
+        "outDir": "../../04./build/js", // 타스가 컴파일되어 자스가 생성될 때, 자스가 저장되는 위치 
+        "target": "ES2015", // ES06,
+        "noEmitOnError": false, // 에러가 있을시 Emit 되지 않음 
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true, 
+        "lib": ["ESNext", "DOM"],
+        "strict": true,
+        "strictNullChecks": true
+    },
+
+    "include": [
+        "../../04./src/**/*.ts", // 대상이 되는 타스 파일 패턴, 이외의 패턴은 제외함 
+    ]
+}
